@@ -1,0 +1,25 @@
+<service>
+	<id>inventory.exe</id>
+	<name>inventory</name>
+	<description> </description>
+	<executable>C:\Program Files (x86)\nodejs\node.exe</executable>
+	<logmode>rotate</logmode>
+	<argument>--harmony</argument>
+	<argument>D:\inventory\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>D:\inventory\index.js</argument>
+	<argument>--log</argument>
+	<argument>inventory wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<stoptimeout>30sec</stoptimeout>
+	<workingdirectory>D:\inventory</workingdirectory>
+</service>

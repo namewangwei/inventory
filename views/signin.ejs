@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= blog.title %></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/css/signin.css" />
+  </head>
+  <body>
+    <form method="post">
+			<h3>手机库存系统</h3>
+		<div class="form-group">		
+			<label>用户名：</label>	
+			<input type="text" class="form-control" name="name" placeholder="请输入用户名" onfocus id="name" autofocus>
+		</div>
+		<div class="form-group">	
+			<label>密码：</label>		
+			<input type="password" class="form-control" name="password" placeholder="请输入密码" id="password">
+		</div>
+		
+		<button type="submit" class="btn btn-primary" id="signin">登录</button>	
+</form>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+		<script>
+		$(function () {
+			$(document).keyup(function(event){  
+				if(event.keyCode ==13){  
+					$(".btn").trigger("click");  
+				}  
+			})
+			$('#signin').click(function (e) {
+				e.preventDefault()
+				$.ajax({
+					url: '/signin',
+					type: 'post',
+					data: {
+						name: $('#name').val(),
+						password: $('#password').val()
+					},
+					success: function (result) {
+						if (result.result) {
+							window.location.href = 'posts'
+						}
+							
+						else 
+							alert(result.message)
+					}
+				})
+			})
+		})
+			
+		</script>
+  <body>
+<html>
+
+  

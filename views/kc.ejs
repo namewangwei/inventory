@@ -1,0 +1,123 @@
+ <%- include('components/header') %>
+ <style>
+    *{font-size:12px!important}
+</style>
+ <div class="content">     
+    <div class="des">
+        <div>
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">出/入库:</label>
+                    <select class="form-control" name="status2" id="status2">
+                        <option value="0">全部</option>
+                        <option value="1">入库</option>
+                        <option value="2">出库</option>
+                    </select>
+                </div>  
+                <div class="form-group">
+                    <label for="">日期:</label>
+                     <input type="date" class="form-control" name="time" placeholder="请扫描或者输入IMEI" id="time">
+                </div>       
+                <!--<div class="form-group">
+                    <label for="">状态:</label>
+                    <select class="form-control" name="testStatus2" id="testStatus2">
+                        <option value="0">全部</option>
+                        <option value="1">(入库)库管---检测1</option>
+                        <option value="2">检测员(1)</option>
+                        <option value="3">(已检测1)检测---库管</option>
+                        <option value="4">库管(检测1)</option>
+                        <option value="5">库管---跟单</option>
+                        <option value="6">跟单员(进)</option>
+                        <option value="7">跟单---装机</option>
+                        <option value="8">ABC装机中</option>
+                        <option value="9">(已装机)ABC---跟单</option>
+                        <option value="10">跟单员(出)</option>
+                        <option value="11">跟单---库管</option>
+                        <option value="12">库管(装机)</option>
+                        <option value="13">库管---检测2</option>
+                        <option value="14">检测员(2)</option>
+                        <option value="15">(已检测2)检测---库管</option>
+                        <option value="16">库管(检测2)</option>
+                        <option value="17">库管确认可销售</option>
+                        <option value="18">已销售</option>
+                        <option value="19">售后订单(待收货)</option>
+                        <option value="20">(入库)库管---检测1</option>
+                        <option value="21">(已收货)售后---检测</option>
+                        <option value="30">检测---售后(退货)</option>
+                        <option value="40">检测---售后(换货)</option>
+                        <option value="50">检测---售后(维修)</option>
+                        <option value="31">退货已收货</option>
+                        <option value="32">退货入库(待接收)</option>
+                        <option value="41">换货已收货</option>
+                        <option value="42">换机入库(待接收)</option>
+                        <option value="51">维修已收货</option>
+                        <option value="60">售后待发货</option>
+                        <option value="61">售后待发货(无操作)</option>
+                        <option value="62">售后已发货(无操作)</option>
+                        <option value="63">售后已发货</option>
+                        <option value="70">报废(待接收)</option>
+                        <option value="71">报废</option>                       
+                    </select>
+                </div>-->
+                <div class="form-group">
+                    <label for="">机型:</label>
+                    <select class="form-control" name="type" id="type">
+                        <option value="0">全部</option>                        
+                        <option value="1">Iphone 6</option>
+                        <option value="2">Iphone 6P</option>
+                        <option value="3">Iphone 6S</option>
+                        <option value="4">Iphone 6 SP</option>
+                        <option value="5">Iphone 7</option>
+                        <option value="6">Iphone 7P</option>
+                        <option value="7">Iphone 8</option>
+                        <option value="8">Iphone 8P</option>
+                        <option value="9">Iphone X</option>                       
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <label for="">颜色:</label>
+                    <select class="form-control" name="color" id="color">
+                        <option value="0">全部</option>                        
+                        <option value="1">黑色</option>
+                        <option value="2">白色</option>
+                        <option value="3">亮黑</option>
+                        <option value="4">磨砂黑</option>
+                        <option value="5">中国红</option>
+                        <option value="6">粉色</option>
+                        <option value="7">金色</option>
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <label for="">内存:</label>
+                    <select class="form-control" name="memory" id="memory">
+                        <option value="0">全部</option>                         
+                        <option value="1">16G</option>
+                        <option value="2">32G</option>
+                        <option value="3">64G</option>
+                        <option value="4">128G</option>
+                        <option value="5">256G</option>                       
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI2" placeholder="请扫描或者输入IMEI" id="IMEI2" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query2">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid2"></table>
+                <div id="jqGridPager2"></div>
+                <img id="img" style="display: none"/> 
+                <button id="export" class="btn" style="margin-top: 10px">导出excel</button>
+                <button id="print" class="btn" style="margin-top: 10px">打印</button>
+            </div>
+    
+        </div>
+    </div>
+    
+       
+ </div>
+ 
+ <%- include('components/nav') %>
+  <script src="/js/kc.js"></script>
+ <%- include('components/footer') %>

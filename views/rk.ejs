@@ -1,0 +1,86 @@
+ <%- include('components/header') %>
+ <style>
+    *{font-size:12px!important}
+    li {border:none!important}
+    .ul {padding:6px 12px;}
+    .ul a {color: #538bfa}
+</style>
+ <div class="content">     
+    <div class="ul">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">确认收货</a></li>
+            <li role="presentation"><a href="javascript:;">操作</a></li>           
+        </ul>
+    </div>
+    <div class="des">
+        <div>
+            <form class="form-inline topForm">                
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI1" placeholder="请扫描或者输入IMEI" id="IMEI1" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query1">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid1"></table>
+                <div id="jqGridPager1"></div>               
+            </div>
+        </div>
+        <div style="display: none">
+            <form class="form-inline topForm">
+               <!-- <div class="form-group">
+                    <label for="">出/入库:</label>
+                    <select class="form-control" name="status2" id="status2">
+                        <option value="0">全部</option>
+                        <option value="1">入库</option>
+                        <option value="2">出库</option>
+                    </select>
+                </div>        
+                <div class="form-group">
+                    <label for="">状态:</label>
+                    <select class="form-control" name="testStatus2" id="testStatus2">
+                        <option value="0">全部</option>
+                        <option value="1">(入库)库管---检测1</option>
+                        <option value="2">检测员(1)</option>
+                        <option value="3">(已检测1)检测---库管</option>
+                        <option value="4">库管(检测1)</option>
+                        <option value="5">库管---跟单</option>
+                        <option value="6">跟单员(进)</option>
+                        <option value="7">跟单---装机</option>
+                        <option value="8">ABC装机中</option>
+                        <option value="9">(已装机)ABC---跟单</option>
+                        <option value="10">跟单员(出)</option>
+                        <option value="11">跟单---库管</option>
+                        <option value="12">库管(装机)</option>
+                        <option value="13">库管---检测2</option>
+                        <option value="14">检测员(2)</option>
+                        <option value="15">(已检测2)检测---库管</option>
+                        <option value="16">库管(检测2)</option>
+                        <option value="17">库管---销售</option>
+                        <option value="18">可销售</option>
+                        <option value="19">已销售</option>
+                    </select>
+                </div> -->
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI2" placeholder="请扫描或者输入IMEI" id="IMEI2" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query2">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid2"></table>
+                <div id="jqGridPager2"></div>
+                <img id="img" style="display: none"/> 
+                <!--<button id="export">导出excel</button>
+                <button id="print">打印</button>-->
+            </div>
+    
+        </div>
+    </div>
+    
+       
+ </div>
+ 
+ <%- include('components/nav') %>
+  <script src="/js/rk.js"></script>
+ <%- include('components/footer') %>

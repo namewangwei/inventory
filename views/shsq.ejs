@@ -1,0 +1,100 @@
+ <%- include('components/header') %>
+ <style>
+    *{font-size:12px!important}
+    li {border:none!important}
+    .ul {padding:6px 12px;}
+    .ul a {color: #538bfa}
+</style>
+ <div class="content">     
+    <div class="ul">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="javascript:;">已销售机器</a></li>
+            <li role="presentation"><a href="javascript:;">售后申请单</a></li> 
+            <li role="presentation"><a href="javascript:;">售后确认收货</a></li>
+            <li role="presentation"><a href="javascript:;">售后处理</a></li>
+            <li role="presentation"><a href="javascript:;">售后发货</a></li>          
+        </ul>
+    </div>
+    <div class="des">
+        <div>
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI1" placeholder="IMEI或手机号码" id="IMEI1" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query1">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid1"></table>
+                <div id="jqGridPager1"></div>
+            </div>
+        </div>
+
+        <div style="display: none">
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI2" placeholder="请扫描或者输入IMEI" id="IMEI2" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query2">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid2"></table>
+                <div id="jqGridPager2"></div>
+            </div>   
+        </div>
+
+        <div style="display: none">
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI3" placeholder="请扫描或者输入IMEI" id="IMEI3" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query3">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid3"></table>
+                <div id="jqGridPager3"></div>
+            </div>   
+        </div>
+
+        <div style="display: none">
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI4" placeholder="请扫描或者输入IMEI" id="IMEI4" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query4">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid4"></table>
+                <div id="jqGridPager4"></div>
+            </div>   
+        </div>
+
+        <div style="display: none">
+            <form class="form-inline topForm">
+                <div class="form-group">
+                    <label for="">搜索:</label>
+                    <input type="text" class="form-control" name="IMEI5" placeholder="请扫描或者输入IMEI" id="IMEI5" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary" id="query5">查询</button>
+            </form>
+            <div class="table">
+                <table id="jqGrid5"></table>
+                <div id="jqGridPager5"></div>
+            </div>   
+        </div>
+    </div>
+    
+       
+ </div>
+ 
+ <%- include('components/nav') %>
+  <script src="/js/shsq.js"></script>
+ <%- include('components/footer') %>
+ 
+ 
+ 
+ 
+ 

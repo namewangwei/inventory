@@ -1,0 +1,102 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #f3f3f4;
+    overflow: hidden;
+    
+}
+/* 美化滚动条 */
+::-webkit-scrollbar-track-piece {
+    background-color:#f8f8f8;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width:9px;
+    height:9px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#dddddd;
+    background-clip:padding-box;
+    min-height:28px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#bbb;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a, a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.info {
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.info .error {color: red}
+.info .success {color: green}
+
+header {
+    background: #538bfa;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    padding-right: 30px;
+    text-align: right;
+    color: #FFF;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    border-top: 1px solid #EBEBEB;
+    padding-right: 30px;
+    text-align: right;
+    color: #999;
+    background: #fff;
+}
+.content {
+    position: absolute;
+    left: 140px;
+    top: 80px;
+    right: 20px;
+    bottom: 56px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    overflow: auto;
+}
+.topForm {
+    padding: 6px 12px;
+    border-bottom: 1px solid #ebebeb;
+}
+.table {
+    padding: 6px 12px;
+}
+label {
+    font-size: 12px;
+    font-weight: 400
+}
+input.form-control {
+    border: 1px solid #e5e5e5;
+    box-shadow: none;
+    color: #333;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 30px;
+    border-radius: 2px;
+    outline: none!important;
+    font-size: 12px;
+}
+.EditTable td textarea {width: 98%!important}
+th {text-align:center}
+#jqGrid1_cb,
+#jqGrid2_cb{text-align: left}

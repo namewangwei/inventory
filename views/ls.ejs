@@ -1,0 +1,22 @@
+ <%- include('components/header') %>
+  <style>
+  *{font-size:12px!important}
+  b{display:inline-block;width: 140px}
+  </style>
+ <div class="content">
+    <form class="form-inline topForm">
+        <div class="form-group">
+            <label for="">搜索:</label>
+            <input type="text" class="form-control" name="IMEI" placeholder="请扫描或者输入IMEI" id="IMEI" autofocus>
+        </div>
+        <button type="submit" class="btn btn-primary" id="query">查询</button>
+    </form>
+    <div style="padding:12px;">
+        <div style="font-size: 20px!important;padding-bottom:12px;border-bottom: 1px solid #ebebeb">历史纪录信息</div>        
+        <div id="history"><h3>当前没有数据..</h3></div>
+    </div>
+ </div>
+ <%- include('components/nav') %>
+ <script src="/js/ls.js"></script>
+ <%- include('components/footer') %>
+  
